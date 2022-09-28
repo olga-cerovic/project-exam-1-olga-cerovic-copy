@@ -1,0 +1,39 @@
+/*Hamburger-menu-show-not-show-hover*/
+
+header .hamburger-menu {
+  position: absolute;
+  top: 0vh;
+  left: 3vw;
+}
+
+.navigation-menu-mobile {
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.notShow {
+  display: none;
+}
+
+.navigation-menu-mobile li {
+  width: 100%;
+  padding: 2% 0;
+  border-bottom: 2px solid;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.navigation-menu-mobile li a {
+  width: 100%;
+  all: unset;
+}
+
+.navigation-menu-mobile li a:hover {
+  background-color: #d58818;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}

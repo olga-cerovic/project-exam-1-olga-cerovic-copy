@@ -1,0 +1,169 @@
+/*Carousel*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.latests-post-carousel {
+  margin-top: 9%;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  width: 50%;
+  height: 25vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel-content {
+  position: relative;
+  overflow: hidden;
+  transition: width 0.4s;
+  height: 100%;
+}
+
+.container {
+  margin-top: 3%;
+}
+
+.slide {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: left 0.4s cubic-bezier(0.47, 0.13, 0.15, 0.89);
+}
+
+.slide p {
+  font-size: 0.9em;
+}
+
+/*Slider-arrows*/
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  background-color: #d58818;
+  width: 2rem;
+  height: 2rem;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.carousel-arrow-icon-left {
+  margin-top: 16%;
+}
+
+.carousel-arrow-icon-right {
+  margin-top: 16%;
+}
+
+.nav-left {
+  left: -80px;
+}
+
+.nav-right {
+  right: -80px;
+}
+
+img {
+  width: 90%;
+  height: 90%;
+}
+
+/*Media-queries*/
+
+@media only screen and (max-width: 1400px) {
+  .slider-nav {
+    top: 40%;
+  }
+  .latests-post-carousel {
+    margin-top: 11%;
+  }
+
+  .container {
+    margin-top: 3%;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .latests-post-carousel {
+    margin-top: 14%;
+  }
+
+  .container {
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .latests-post-carousel {
+    margin-top: 16%;
+    font-size: 0.9em;
+  }
+  .container {
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .latests-post-carousel {
+    font-size: 0.8em;
+    margin-top: 18%;
+  }
+  .container {
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .latests-post-carousel {
+    margin-top: 7%;
+    font-size: 0.7em;
+  }
+
+  .container {
+    margin-top: 8%;
+    margin-bottom: 0;
+  }
+
+  .slide p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .latests-post-carousel {
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-size: 0.6em;
+  }
+
+  .container {
+    margin-top: 13%;
+    padding-bottom: 0;
+  }
+
+  .slider-nav {
+    top: 25%;
+  }
+
+  .slide p {
+    font-size: 0.75em;
+  }
+}

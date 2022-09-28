@@ -1,0 +1,150 @@
+/*Menu*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 100000;
+}
+
+/*Nav-bar*/
+.navigation-bar {
+  display: flex;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-decoration: none;
+}
+
+.navigation-menu-mobile {
+  display: none;
+}
+
+.list-item {
+  padding: 10px;
+  list-style: none;
+}
+
+/*Hamburger-menu*/
+.hamburger-menu {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.line-one,
+.line-two,
+.line-three {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+  transition: 0.4s;
+}
+
+.wrapper {
+  background-color: white;
+
+  position: fixed;
+}
+
+header .nav-social {
+  position: absolute;
+  top: 10vh;
+  right: 13vw;
+  display: block;
+}
+
+header hr:nth-child(2) {
+  height: 2px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+main {
+  border-top: 2px solid gray;
+  padding-top: 2vh;
+}
+.active {
+  background-color: #d58818;
+  color: white;
+}
+
+.active a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Subscribe-modal*/
+
+.subscribeModal {
+  display: none;
+  min-width: 250px;
+  background-color: #d58818;
+  border: white;
+  border-style: solid;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 30px;
+  font-size: 17px;
+}
+
+/*Media-queries*/
+
+@media only screen and (max-width: 768px) {
+  .logo-header img {
+    width: 70%;
+    height: 70%;
+  }
+  .logo-header {
+    text-align: center;
+  }
+
+  .navigation-menu {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+    right: 0px;
+    flex-direction: column;
+    background-color: white;
+    display: none;
+  }
+  .nav-change {
+    transform: translate(0%);
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  header .nav-social {
+    display: none !important;
+  }
+
+  .navigation-bar {
+    height: auto;
+  }
+
+  header hr {
+    display: none;
+  }
+}
